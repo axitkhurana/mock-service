@@ -26,7 +26,7 @@ class MockAccount(account.Account):
         return 'id %s' % randint(1, 100000)
 
     def get_latest_post(self, public_id):
-        return get_post()
+        return get_post(public_id)
 
 
 class MockSharedJournalEntry(account.SharedJournalEntry):
@@ -80,5 +80,5 @@ class MockWebServicePost(account.WebServicePost):
 def get_account():
     return MockAccount()
 
-def get_post():
-    return MockWebServicePost()
+def get_post(public_id):
+    return MockWebServicePost(public_id)
