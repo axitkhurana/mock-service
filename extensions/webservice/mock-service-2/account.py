@@ -65,7 +65,7 @@ class MockWebServicePost(account.WebServicePost):
         return "Title"
 
     def get_message(self):
-        return ("10% of the apps in the Sugarlabs App Store are written"
+        return ("A lot of the apps in the Sugarlabs App Store are written"
                 "by kids. #pycon2013 Id2: %s" % self._public_id)
 
     def get_picture(self):
